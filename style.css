@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    width: 520px;
+    padding: 25px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #4a4ac9;
+    color: white;
+}
+
+button:hover {
+    background: #3737a3;
+}
+
+.progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.circle {
+   width: 120px;
+height: 120px;
+border-radius: 50%;
+border: 4px solid #32CD32;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+color: white;
+font-weight: 700;
+background: conic-gradient(#32CD32 var(--progress-degree, 0%), #004526 0%);
+flex-direction: column;
+text-align: center;
+
+}
+
+
+.circle .number {
+    font-size: 1.1rem;
+}
+
+.circle .label {
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+.stats-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background:#2b2b9c;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
